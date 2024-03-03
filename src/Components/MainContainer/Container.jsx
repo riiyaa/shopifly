@@ -6,6 +6,23 @@ import image2 from "../../Images/SliderImage2.jpg";
 import image3 from "../../Images/SliderImage3.gif";
 import image4 from "../../Images/SliderImage4.jpg";
 import image5 from "../../Images/SliderImage5.gif";
+import benefit1 from "../../Images/benifit1.jpg";
+import benefit2 from "../../Images/benifit2.jpg";
+import benefit3 from "../../Images/benifit3.jpg";
+import women from "../../Images/womens.jpg";
+import womenjacket from "../../Images/womenjacket.jpg";
+import womenshirt from "../../Images/womenshirt.jpg";
+import womenjeans from "../../Images/womenjenas.jpg";
+import womenshoes from "../../Images/womenshoes.jpg";
+import womentops from "../../Images/tops.jpg";
+import men from "../../Images/mens.jpg";
+import menshirt from "../../Images/menshirt.jpg";
+import mentshirt from "../../Images/mentshirt.jpg";
+import mentrouser from "../../Images/mentrouser.jpg";
+import menjeans from "../../Images/menjeans.jpg";
+import menshoes from "../../Images/menshoes.jpg";
+import kids from "../../Images/kids.jpg";
+import trending from "../../Images/trending.gif";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -129,9 +146,94 @@ function Container() {
         </Swiper>
       </div>
 
+      <div className="my-10">
+        <div className="capitalize font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-5 mx-5 pr-3 flex items-start flex-col border-b-4 border-b-amber-700 w-fit">
+          <div>Our</div>
+          <div>Benefits</div>
+        </div>
+        <div className="flex justify-evenly">
+          <span>
+            <img className="zoom-in" src={benefit1} alt="" />
+          </span>
+          <span>
+            <img className="zoom-in" src={benefit2} alt="" />
+          </span>
+          <span>
+            <img className="zoom-in" src={benefit3} alt="" />
+          </span>
+        </div>
+      </div>
+
+      <div className="my-12">
+        <div className="capitalize font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-5 mx-5 pr-3 flex items-start flex-col border-b-4 border-b-amber-700 w-fit">
+          <div>Women's Store</div>
+        </div>
+        <div className="flex items-center justify-start flex-wrap px-5">
+          <span className="w-full">
+            <img className="rounded-xl w-full" src={women} alt="" />
+          </span>
+        </div>
+        <div className="flex items-center justify-start flex-wrap pl-5 my-5 gap-5">
+          <span>
+            <img className="rounded-xl" src={womenshirt} alt="" />
+          </span>
+          <span>
+            <img className="rounded-xl" src={womentops} alt="" />
+          </span>
+          <span>
+            <img className="rounded-xl" src={womenjeans} alt="" />
+          </span>
+          <span>
+            <img className="rounded-xl" src={womenjacket} alt="" />
+          </span>
+          <span>
+            <img className="rounded-xl" src={womenshoes} alt="" />
+          </span>
+        </div>
+      </div>
+
+      <div className="my-12">
+        <div className="capitalize font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-5 mx-5 pr-3 flex items-start flex-col border-b-4 border-b-amber-700 w-fit">
+          <div>Men's Store</div>
+        </div>
+        <div className="flex items-center justify-start flex-wrap px-5">
+          <span className="w-full">
+            <img className="rounded-xl w-full" src={men} alt="" />
+          </span>
+        </div>
+        <div className="flex items-center justify-start flex-wrap pl-5 my-5 gap-5">
+          <span>
+            <img className="rounded-xl" src={menshirt} alt="" />
+          </span>
+          <span>
+            <img className="rounded-xl" src={mentshirt} alt="" />
+          </span>
+          <span>
+            <img className="rounded-xl" src={mentrouser} alt="" />
+          </span>
+          <span>
+            <img className="rounded-xl" src={menjeans} alt="" />
+          </span>
+          <span>
+            <img className="rounded-xl" src={menshoes} alt="" />
+          </span>
+        </div>
+      </div>
+
+      <div className="my-12">
+        <div className="capitalize font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-5 mx-5 pr-3 flex items-start flex-col border-b-4 border-b-amber-700 w-fit">
+          <div>Kid's Store</div>
+        </div>
+        <div className="flex items-center justify-start flex-wrap px-5">
+          <span className="w-full">
+            <img className="rounded-xl w-full" src={kids} alt="" />
+          </span>
+        </div>
+      </div>
+
       {swiper.swipe1.length > 0 && (
-        <div className="my-16">
-          <div className="uppercase font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-6 px-5">
+        <div className="my-10">
+          <div className="capitalize font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-5 mx-5 pr-3 flex items-start flex-col border-b-4 border-b-amber-700 w-fit">
             Deal of the day
           </div>
           <Swiper
@@ -162,9 +264,10 @@ function Container() {
         </div>
       )}
 
-      <div className="my-16">
-        <div className="uppercase font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-6 px-5">
-          Top Picks
+      <div className="my-12">
+        <div className="capitalize font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-5 mx-5 pr-3 flex items-start flex-col border-b-4 border-b-amber-700 w-fit">
+          <div>Top</div>
+          <div>Picks</div>
         </div>
         <div className="flex items-center justify-start gap-2 flex-wrap pl-5">
           {swiper.swipe2?.map((data, index) => {
@@ -181,9 +284,9 @@ function Container() {
         </div>
       </div>
 
-      <div className="my-14">
-        <div className="uppercase font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-6 px-5">
-          Category to Bag
+      <div className="my-12">
+        <div className="capitalize font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-5 mx-5 pr-3 flex items-start flex-col border-b-4 border-b-amber-700 w-fit">
+          <div>Category to bag</div>
         </div>
         <div className="flex items-center justify-start flex-wrap pl-5 bg-[#9b8c8c14]">
           {swiper.swipe3?.map((data, index) => {
@@ -199,9 +302,9 @@ function Container() {
         </div>
       </div>
 
-      <div className="my-16">
-        <div className="uppercase font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-6 px-5">
-          Giftcards
+      {/* <div className="my-12">
+        <div className="capitalize font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-5 mx-5 pr-3 flex items-start flex-col border-b-4 border-b-amber-700 w-fit">
+          <div>Giftcards</div>
         </div>
         <div className="flex items-center justify-start gap-5 flex-wrap pl-5">
           {swiper.swipe4?.map((data, index) => {
@@ -216,10 +319,16 @@ function Container() {
             );
           })}
         </div>
-      </div>
+      </div> */}
       <div className="pb-9">
-        <div className="uppercase font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-6 px-5">
-          new In Top Brands
+        <div className="capitalize font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-5 mx-5 pr-3 flex items-start flex-col border-b-4 border-b-amber-700 w-fit">
+          <div>Top</div>
+          <div>Brands</div>
+        </div>
+        <div className="flex items-center justify-start flex-wrap px-5">
+          <span className="w-full">
+            <img className="rounded-xl w-full" src={trending} alt="" />
+          </span>
         </div>
         <div className="flex items-center justify-start gap-5 flex-wrap pl-5">
           {swiper.swipe6?.map((data, index) => {
@@ -236,10 +345,11 @@ function Container() {
         </div>
       </div>
 
-      {swiper?.swipe5?.length > 0 && (
-        <div className="my-16">
-          <div className="uppercase font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-6 px-5">
-            Deals On Latest Arival
+      {/* {swiper?.swipe5?.length > 0 && (
+        <div className="my-12">
+          <div className="capitalize font-extrabold text-2xl text-gray-900 dark:text-slate-100 mb-5 mx-5 pr-3 flex items-start flex-col border-b-4 border-b-amber-700 w-fit">
+            <div>Latest</div>
+            <div>Arivals</div>
           </div>
           <Swiper
             grabCursor={false}
@@ -267,7 +377,7 @@ function Container() {
             })}
           </Swiper>
         </div>
-      )}
+      )} */}
 
       {/* <div className="py-3 px-[40px]">
         <Routes>
